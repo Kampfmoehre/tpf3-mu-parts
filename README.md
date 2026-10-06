@@ -17,6 +17,8 @@ Re 450 locomotive and its driving trailer.
   differently, so the mod is marked cosmetic and achievements stay enabled.
 - English and German; set names come from the game's own translations.
 
+Available on mod.io: <https://mod.io/g/transportfever3/m/buyable-multiple-unit-parts>
+
 ## Notes
 
 - Parts of electric multiple units often carry motors in the middle cars
