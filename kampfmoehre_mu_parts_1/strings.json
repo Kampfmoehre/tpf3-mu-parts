@@ -1,0 +1,16 @@
+{
+    "en": {
+        "mu_parts_set_tooltip": "Offer the power cars and special coaches of this set as single vehicles in the depot, in addition to the complete set. Unlocked parts get the part's role from the file name appended to their name, e.g. \"(front)\".",
+        "mu_parts_other_name": "Other sets (from mods)",
+        "mu_parts_other_tooltip": "Apply the same to every multiple-unit set that is not listed above, e.g. from vehicle mods.",
+        "mu_parts_off": "Off",
+        "mu_parts_on": "On"
+    },
+    "de": {
+        "mu_parts_set_tooltip": "Bietet Triebköpfe und Sonderwagen dieses Sets zusätzlich zum kompletten Set einzeln im Depot an. Freigeschaltete Teile erhalten ihre Rolle aus dem Dateinamen als Namenszusatz, z. B. „(front)“.",
+        "mu_parts_other_name": "Weitere Sets (aus Mods)",
+        "mu_parts_other_tooltip": "Dasselbe für alle Triebzug-Sets, die oben nicht aufgeführt sind, z. B. aus Fahrzeug-Mods.",
+        "mu_parts_off": "Aus",
+        "mu_parts_on": "An"
+    }
+}

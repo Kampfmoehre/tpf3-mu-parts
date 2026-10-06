@@ -1,0 +1,175 @@
+{
+    "cosmetic": true,
+    "dependencies": null,
+    "incompatibilities": null,
+    "modId": "kampfmoehre_mu_parts_1",
+    "options": null,
+    "params": [
+        {
+            "defaultIndex": 0,
+            "key": "set_avelia_liberty",
+            "name": "VEHICLE_MULTIPLEUNIT_AVELIA_LIBERTY_NAME",
+            "tooltip": "mu_parts_set_tooltip",
+            "uiType": "Button",
+            "values": [
+                "mu_parts_off",
+                "mu_parts_on"
+            ]
+        },
+        {
+            "defaultIndex": 0,
+            "key": "set_emd_f",
+            "name": "VEHICLE_MULTIPLEUNIT_EMD_F_NAME",
+            "tooltip": "mu_parts_set_tooltip",
+            "uiType": "Button",
+            "values": [
+                "mu_parts_off",
+                "mu_parts_on"
+            ]
+        },
+        {
+            "defaultIndex": 1,
+            "key": "set_es1_lastochka",
+            "name": "VEHICLE_MULTIPLEUNIT_ES1_LASTOCHKA_NAME",
+            "tooltip": "mu_parts_set_tooltip",
+            "uiType": "Button",
+            "values": [
+                "mu_parts_off",
+                "mu_parts_on"
+            ]
+        },
+        {
+            "defaultIndex": 0,
+            "key": "set_fs_etr_450",
+            "name": "VEHICLE_MULTIPLEUNIT_FS_ETR_450_NAME",
+            "tooltip": "mu_parts_set_tooltip",
+            "uiType": "Button",
+            "values": [
+                "mu_parts_off",
+                "mu_parts_on"
+            ]
+        },
+        {
+            "defaultIndex": 0,
+            "key": "set_fuxing_hao",
+            "name": "VEHICLE_MULTIPLEUNIT_FUXING_HAO_NAME",
+            "tooltip": "mu_parts_set_tooltip",
+            "uiType": "Button",
+            "values": [
+                "mu_parts_off",
+                "mu_parts_on"
+            ]
+        },
+        {
+            "defaultIndex": 1,
+            "key": "set_hst_125",
+            "name": "VEHICLE_MULTIPLEUNIT_HST_125_NAME",
+            "tooltip": "mu_parts_set_tooltip",
+            "uiType": "Button",
+            "values": [
+                "mu_parts_off",
+                "mu_parts_on"
+            ]
+        },
+        {
+            "defaultIndex": 0,
+            "key": "set_ice1",
+            "name": "VEHICLE_MULTIPLEUNIT_ICE1_NAME",
+            "tooltip": "mu_parts_set_tooltip",
+            "uiType": "Button",
+            "values": [
+                "mu_parts_off",
+                "mu_parts_on"
+            ]
+        },
+        {
+            "defaultIndex": 0,
+            "key": "set_metroliner",
+            "name": "VEHICLE_MULTIPLEUNIT_METROLINER_NAME",
+            "tooltip": "mu_parts_set_tooltip",
+            "uiType": "Button",
+            "values": [
+                "mu_parts_off",
+                "mu_parts_on"
+            ]
+        },
+        {
+            "defaultIndex": 1,
+            "key": "set_re_450",
+            "name": "VEHICLE_MULTIPLEUNIT_RE_450_NAME",
+            "tooltip": "mu_parts_set_tooltip",
+            "uiType": "Button",
+            "values": [
+                "mu_parts_off",
+                "mu_parts_on"
+            ]
+        },
+        {
+            "defaultIndex": 0,
+            "key": "set_shaoshan_4g",
+            "name": "VEHICLE_MULTIPLEUNIT_SHAOSHAN_4G_NAME",
+            "tooltip": "mu_parts_set_tooltip",
+            "uiType": "Button",
+            "values": [
+                "mu_parts_off",
+                "mu_parts_on"
+            ]
+        },
+        {
+            "defaultIndex": 0,
+            "key": "set_shinkansen_0s",
+            "name": "VEHICLE_MULTIPLEUNIT_SHINKANSEN_0S_NAME",
+            "tooltip": "mu_parts_set_tooltip",
+            "uiType": "Button",
+            "values": [
+                "mu_parts_off",
+                "mu_parts_on"
+            ]
+        },
+        {
+            "defaultIndex": 0,
+            "key": "set_tgv_duplex",
+            "name": "VEHICLE_MULTIPLEUNIT_TGV_DUPLEX_NAME",
+            "tooltip": "mu_parts_set_tooltip",
+            "uiType": "Button",
+            "values": [
+                "mu_parts_off",
+                "mu_parts_on"
+            ]
+        },
+        {
+            "defaultIndex": 1,
+            "key": "set_twindexx",
+            "name": "VEHICLE_MULTIPLEUNIT_TWINDEXX_NAME",
+            "tooltip": "mu_parts_set_tooltip",
+            "uiType": "Button",
+            "values": [
+                "mu_parts_off",
+                "mu_parts_on"
+            ]
+        },
+        {
+            "defaultIndex": 0,
+            "key": "set_other",
+            "name": "mu_parts_other_name",
+            "tooltip": "mu_parts_other_tooltip",
+            "uiType": "Button",
+            "values": [
+                "mu_parts_off",
+                "mu_parts_on"
+            ]
+        }
+    ],
+    "postRunScript": {
+        "fileName": "kampfmoehre_mu_parts_1::/mod.script@postRunFn"
+    },
+    "preRunScript": {
+        "fileName": ""
+    },
+    "revision": 1,
+    "runScript": {
+        "fileName": ""
+    },
+    "severityAdd": "None",
+    "severityRemove": "Warning"
+}
