@@ -5,7 +5,7 @@
             "role": "CREATOR"
         }
     ],
-    "description": "You want the power car of the Inter-City 125? Your RE 450 has one middle coach too few? You want the ES1 but in short?\n\nThis mod allows to buy the parts of a multiple unit set individually. For each MU there is a switch to activate, afterwards all single parts are buyable in the game. The MU of course still.",
+    "description": "You want the power car of the Inter-City 125? Your RE 450 has one middle coach too few? You want the Twindexx but in short?\n\nThis mod allows to buy the parts of a multiple unit set individually. For each MU there is a switch to activate, afterwards all single parts are buyable in the game. The MU of course still.\n\nDisclaimer: This mod was created with the help of LLMs but all code was reviewed and tested by me.",
     "name": "Buyable Multiple Unit Parts",
     "summary": "Buy power cars and set coaches of multiple units individually",
     "tags": [
@@ -17,7 +17,7 @@
         "de": {
             "name": "Triebzug-Teile einzeln kaufen",
             "summary": "Triebköpfe und Set-Wagen von Triebzügen einzeln kaufen",
-            "description": "Du willst gerne den Triebkopf des Inter-City 125? Dein RE 450 hat einen Mittelwagen zu wenig? Du willst die ES1 aber in kurz?\n\nDiese Mod erlaubt für jede \"Multiple Unit\" die Teile des Sets einzeln zu kaufen. Für jede MU gibt es einen Schalter zum aktivieren, anshcließend sind im Spiel alle Einzelteile kaufbar. Die MU natürlich weiterhin."
+            "description": "Du willst gerne den Triebkopf des Inter-City 125? Dein RE 450 hat einen Mittelwagen zu wenig? Du willst die Twindexx aber in kurz?\n\nDiese Mod erlaubt für jede \"Multiple Unit\" die Teile des Sets einzeln zu kaufen. Für jede MU gibt es einen Schalter zum aktivieren, anschließend sind im Spiel alle Einzelteile kaufbar. Die MU natürlich weiterhin.\n\nDisclaimer: Diese Mod wurde mit Hilfe von LLMs erstellt, aber der gesamte Code wurde von mir überprüft und getestet."
         }
     }
 }

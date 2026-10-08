@@ -28,7 +28,7 @@
             ]
         },
         {
-            "defaultIndex": 1,
+            "defaultIndex": 0,
             "key": "set_es1_lastochka",
             "name": "VEHICLE_MULTIPLEUNIT_ES1_LASTOCHKA_NAME",
             "tooltip": "mu_parts_set_tooltip",
@@ -166,7 +166,7 @@
     "preRunScript": {
         "fileName": ""
     },
-    "revision": 1,
+    "revision": 2,
     "runScript": {
         "fileName": ""
     },

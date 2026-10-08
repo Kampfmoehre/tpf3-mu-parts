@@ -8,7 +8,7 @@ Re 450 locomotive and its driving trailer.
 
 - The complete sets stay available.
 - When loading a game you choose **per set** whether its parts are unlocked.
-  Default: Inter-City 125, Re 450 DPZ, RABe 502 Twindexx and ES1 Lastochka.
+  Default: Inter-City 125, Re 450 DPZ and RABe 502 Twindexx.
   A last switch covers sets from other mods.
 - Unlocked parts get their role from the file name appended to the name so
   they can be told apart, e.g. "Inter-City 125 (front)" or
