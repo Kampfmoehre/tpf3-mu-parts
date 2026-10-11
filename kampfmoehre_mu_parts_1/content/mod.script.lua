@@ -9,9 +9,17 @@
 -- same model table API the official campaign mods use
 -- (api.res.modelRep.getAsTable / setAsTable).
 --
--- Mod parameters: one Off/On switch per base-game set (key "set_<id>", values
--- from allModParams are 1-based: 1 = Off, 2 = On) plus "set_other" for every
--- multiple unit not listed here (vehicle mods).
+-- Optionally the parts are shown as variants of their set in the vehicle store.
+-- A model's groupFileName must name a model (the engine drops a .mu path with
+-- "referenced model not found"), so here every unlocked part of a set points to
+-- the first unlocked part of that set; that only marks the part. The GUI script
+-- (gui/kampfmoehre_mu_parts/mu_parts.script.lua) recognises the marker and
+-- regroups the parts under the set itself.
+--
+-- Mod parameters (values from allModParams are 1-based: 1 = Off, 2 = On):
+-- "group_variants" for the variant grouping, one switch per base-game set
+-- (key "set_<id>") plus "set_other" for every multiple unit not listed here
+-- (vehicle mods).
 
 local KNOWN_SETS = {
 	["::/vehicle/train/avelia_liberty/avelia_liberty.mu"] = "avelia_liberty",
@@ -39,18 +47,8 @@ local function resolveModelName(muPath, name)
 	return dir .. name
 end
 
--- "::/vehicle/train/hst_125/hst_125_middle2.mdl" with set "hst_125" -> "middle2"
-local function partRole(modelName, muPath)
-	local base = (modelName:match("([^/]+)%.mdl$") or modelName)
-	local setBase = (muPath:match("([^/]+)%.mu$") or "")
-	if setBase ~= "" and base:sub(1, #setBase + 1) == setBase .. "_" then
-		return base:sub(#setBase + 2)
-	end
-	return base
-end
-
 -- Returns true if the model was changed.
-local function unlock(modelName, tags, role)
+local function unlock(modelName, tags, groupPath)
 	local id = api.res.modelRep.find(modelName)
 	if id == nil or id < 0 then
 		print("[mu_parts] model not found: " .. tostring(modelName))
@@ -68,12 +66,8 @@ local function unlock(modelName, tags, role)
 	for _, t in ipairs(tags or {}) do newTags[#newTags + 1] = t end
 	if #newTags == 0 then newTags[1] = "default" end
 	tv.filterTags = newTags
-
-	-- set parts often share the display name with their set or with each
-	-- other; add the part's role from the file name to tell them apart
-	local desc = model.metadata.description
-	if type(desc) == "table" and type(desc.name) == "string" and role and role ~= "" then
-		desc.name = desc.name .. " (" .. role .. ")"
+	if groupPath and (tv.groupFileName == nil or tv.groupFileName == "") then
+		tv.groupFileName = groupPath
 	end
 
 	api.res.modelRep.setAsTable(id, model)
@@ -93,6 +87,7 @@ function data()
 			return params.set_other == 2
 		end
 
+		local groupVariants = params.group_variants ~= 1 -- default On
 		local count, sets = 0, 0
 		for muId, _ in pairs(api.res.multipleUnitRep.getAll()) do
 			local muPath = api.res.multipleUnitRep.getName(muId)
@@ -101,13 +96,16 @@ function data()
 				if ok and mu and mu.vehicles then
 					sets = sets + 1
 					local seen = {}
+					local parent -- first unlocked part, the marker all parts point to
 					for _, v in ipairs(mu.vehicles) do
 						local modelName = resolveModelName(muPath, v.name)
 						if modelName and not seen[modelName] then
 							seen[modelName] = true
-							local okU, changed = pcall(unlock, modelName, mu.filterTags, partRole(modelName, muPath))
+							local okU, changed = pcall(unlock, modelName, mu.filterTags,
+								groupVariants and (parent or modelName) or nil)
 							if okU and changed then
 								count = count + 1
+								parent = parent or modelName
 								print("[mu_parts] made buyable: " .. modelName)
 							elseif not okU then
 								print("[mu_parts] failed for " .. tostring(modelName) .. ": " .. tostring(changed))
@@ -117,7 +115,8 @@ function data()
 				end
 			end
 		end
-		print(string.format("[mu_parts] %d sets enabled, %d set-only vehicle models made buyable", sets, count))
+		print(string.format("[mu_parts] %d sets enabled, %d set-only vehicle models made buyable%s",
+			sets, count, groupVariants and " (as variants of their set)" or ""))
 	end
 
 	return mod

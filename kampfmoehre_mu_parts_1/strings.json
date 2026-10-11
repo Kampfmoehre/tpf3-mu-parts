@@ -1,16 +1,26 @@
 {
     "en": {
-        "mu_parts_set_tooltip": "Offer the power cars and special coaches of this set as single vehicles in the depot, in addition to the complete set. Unlocked parts get the part's role from the file name appended to their name, e.g. \"(front)\".",
+        "mu_parts_group_name": "Show parts as variants of their set",
+        "mu_parts_group_tooltip": "Unlocked parts are listed under their set (expand the set in the depot list) instead of as separate entries. The complete set is then bought from the expanded list.",
+        "mu_parts_set_tooltip": "Offer the power cars and special coaches of this set as single vehicles in the depot, in addition to the complete set. Unlocked parts get their role appended to their name, e.g. \"(power car)\" or \"(middle car 2)\".",
         "mu_parts_other_name": "Other sets (from mods)",
         "mu_parts_other_tooltip": "Apply the same to every multiple-unit set that is not listed above, e.g. from vehicle mods.",
         "mu_parts_off": "Off",
-        "mu_parts_on": "On"
+        "mu_parts_on": "On",
+        "mu_parts_role_power_car": "power car",
+        "mu_parts_role_end_car": "end car",
+        "mu_parts_role_middle_car": "middle car"
     },
     "de": {
-        "mu_parts_set_tooltip": "Bietet Triebköpfe und Sonderwagen dieses Sets zusätzlich zum kompletten Set einzeln im Depot an. Freigeschaltete Teile erhalten ihre Rolle aus dem Dateinamen als Namenszusatz, z. B. „(front)“.",
+        "mu_parts_group_name": "Teile als Varianten ihres Sets anzeigen",
+        "mu_parts_group_tooltip": "Freigeschaltete Teile erscheinen unter ihrem Set (Set in der Depotliste aufklappen) statt als eigene Einträge. Das komplette Set kauft man dann aus der aufgeklappten Liste.",
+        "mu_parts_set_tooltip": "Bietet Triebköpfe und Sonderwagen dieses Sets zusätzlich zum kompletten Set einzeln im Depot an. Freigeschaltete Teile erhalten ihre Rolle als Namenszusatz, z. B. „(Triebkopf)“ oder „(Mittelwagen 2)“.",
         "mu_parts_other_name": "Weitere Sets (aus Mods)",
         "mu_parts_other_tooltip": "Dasselbe für alle Triebzug-Sets, die oben nicht aufgeführt sind, z. B. aus Fahrzeug-Mods.",
         "mu_parts_off": "Aus",
-        "mu_parts_on": "An"
+        "mu_parts_on": "An",
+        "mu_parts_role_power_car": "Triebkopf",
+        "mu_parts_role_end_car": "Endwagen",
+        "mu_parts_role_middle_car": "Mittelwagen"
     }
 }

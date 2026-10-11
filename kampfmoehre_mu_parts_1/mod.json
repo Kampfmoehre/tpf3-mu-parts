@@ -6,6 +6,17 @@
     "options": null,
     "params": [
         {
+            "defaultIndex": 1,
+            "key": "group_variants",
+            "name": "mu_parts_group_name",
+            "tooltip": "mu_parts_group_tooltip",
+            "uiType": "Button",
+            "values": [
+                "mu_parts_off",
+                "mu_parts_on"
+            ]
+        },
+        {
             "defaultIndex": 0,
             "key": "set_avelia_liberty",
             "name": "VEHICLE_MULTIPLEUNIT_AVELIA_LIBERTY_NAME",
@@ -166,7 +177,7 @@
     "preRunScript": {
         "fileName": ""
     },
-    "revision": 2,
+    "revision": 3,
     "runScript": {
         "fileName": ""
     },
