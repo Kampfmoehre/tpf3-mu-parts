@@ -23,7 +23,7 @@
 --    engine/capacity conditions, so unpowered coaches show up under their set.
 
 function data()
-	local VERSION = "0.3.2"
+	local VERSION = "0.3.3"
 
 	local react = ug_require "::/gui/main/react.lua"
 	local builtin = ug_require "::/gui/main/builtin.lua"
@@ -83,7 +83,7 @@ function data()
 		if state.partToSet == nil or state.partToSet[modelId] == nil then
 			local ok, map = pcall(buildPartToSet)
 			if not ok then
-				log.warning("[mu_parts] building the part list failed: " .. tostring(map))
+				log.warning("[kampfmoehre_mu_parts] building the part list failed: " .. tostring(map))
 				map = {}
 			end
 			-- remember misses, so other models with a groupFileName (variants
@@ -97,7 +97,7 @@ function data()
 				state.partRank = {}
 			local count = 0
 			for __, v in pairs(map) do if v then count = count + 1 end end
-			log.message("[mu_parts] " .. count .. " parts grouped under their set")
+			log.message("[kampfmoehre_mu_parts] " .. count .. " parts grouped under their set")
 		end
 		return state.partToSet[modelId] or nil
 	end
@@ -237,13 +237,13 @@ function data()
 						result.names[1] = result.name
 					end
 				elseif not ok then
-					log.warning("[mu_parts] label failed: " .. tostring(label))
+					log.warning("[kampfmoehre_mu_parts] label failed: " .. tostring(label))
 				end
 			end
 			return result
 		end
 
-		log.message("[mu_parts] v" .. VERSION .. " hooks installed")
+		log.message("[kampfmoehre_mu_parts] v" .. VERSION .. " hooks installed")
 	end
 
 	local M = {}

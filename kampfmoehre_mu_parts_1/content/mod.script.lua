@@ -51,7 +51,7 @@ end
 local function unlock(modelName, tags, groupPath)
 	local id = api.res.modelRep.find(modelName)
 	if id == nil or id < 0 then
-		print("[mu_parts] model not found: " .. tostring(modelName))
+		print("[kampfmoehre_mu_parts] model not found: " .. tostring(modelName))
 		return false
 	end
 	local model = api.res.modelRep.getAsTable(id)
@@ -106,16 +106,16 @@ function data()
 							if okU and changed then
 								count = count + 1
 								parent = parent or modelName
-								print("[mu_parts] made buyable: " .. modelName)
+								print("[kampfmoehre_mu_parts] made buyable: " .. modelName)
 							elseif not okU then
-								print("[mu_parts] failed for " .. tostring(modelName) .. ": " .. tostring(changed))
+								print("[kampfmoehre_mu_parts] failed for " .. tostring(modelName) .. ": " .. tostring(changed))
 							end
 						end
 					end
 				end
 			end
 		end
-		print(string.format("[mu_parts] %d sets enabled, %d set-only vehicle models made buyable%s",
+		print(string.format("[kampfmoehre_mu_parts] %d sets enabled, %d set-only vehicle models made buyable%s",
 			sets, count, groupVariants and " (as variants of their set)" or ""))
 	end
 

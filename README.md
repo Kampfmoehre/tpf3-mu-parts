@@ -114,7 +114,7 @@ sync.sh                            copies the mod into the game's staging area
 ```
 
 Workflow: edit, `./sync.sh`, reload the savegame (the parameters are read on
-load). Both scripts print `[mu_parts]` lines to
+load). Both scripts print `[kampfmoehre_mu_parts]` lines to
 `.../3493540/local/crash_dump/stdout.txt`. Before uploading a new version
 through the in-game Mod-Hub, increase `revision` in `mod.json`.
 
